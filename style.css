@@ -16,6 +16,15 @@
     text-transform: capitalize;
     transition: .2s linear;
 }
+canvas {
+    position:static;
+    padding-top: 85px;
+    padding-left: 90px;
+    top: 50%;
+    transform: translate(30%, -20%);
+    max-width: 80vw;
+    max-height: 50vh;
+  }
 
 html{
     font-size: 62.5%;
@@ -208,7 +217,7 @@ section{
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background:url(../images/home-img.jpeg) no-repeat;
+    background:url(../images/backdrop.png) no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -232,10 +241,10 @@ section{
 }
 
 .about .row{
-    display: flex;
-    align-items: center;
-    background:var(--black);
-    flex-wrap: wrap;
+    display:flex;
+    align-items:center;
+    background:black;
+    flex-wrap:wrap;
 }
 
 .about .row .image{
@@ -243,9 +252,11 @@ section{
 }
 
 .about .row .image img{
-    width: 100%;
+    width: 70%;
+    height:50%;
 }
 .about .row .content{
+    background-color: #404040;
     flex:1 1 45rem;
     padding:2rem;
 }
@@ -272,10 +283,11 @@ section{
     padding:5rem;
     text-align: center;
     border:var(--border);    
+    position: static;
 }
 
 .menu .box-container .box img{
-    height: 10rem;
+    height: 20rem;
 }
 
 .menu .box-container .box h3{
@@ -640,3 +652,8 @@ section{
     }
 
 }
+
+
+
+
+
